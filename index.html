@@ -9,11 +9,19 @@
   crossorigin="anonymous"></script>
   <!-- <script src="js/jquery-3.1.1.js"></script> -->
   <script src="js/scripts.js"></script>
-  <title></title>
+  <title>Leap Year Calculator</title>
 </head>
 <body>
   <div class="container">
-
+    <p>Wanna know whether a particular year is a leap year? Enter it below to find out!</p>
+    <form class="form" id="submissionForm">
+      <label for="year">Enter a year</label>
+      <input type="text" id="year">
+      <button type="submit" id="submitbtn" class="btn" name="button">Submit</button>
+    </form>
+    <div class="hiddenResult">
+      <p><span id="yearSpan"></span> is <span id="notSpan"></span> a leap year.</p>
+    </div>
   </div>
 </body>
 </html>
